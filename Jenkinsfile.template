@@ -1,13 +1,13 @@
 pipeline {
     agent { 
         node {
-            label 'jenkins-agent-goes-here'
+            label 'gkfc-docker-agent-python'
             }
       }
     stages {
         stage('Build') {
             steps {
-                echo "Building.."
+                echo "Building.. TEST"
                 sh '''
                 echo "doing build stuff.."
                 '''
